@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+	<!-- jQuery UI -->
+	<link href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.css" rel="stylesheet"/>
+	<!-- FontAwesome CSS -->
+	<script src="https://kit.fontawesome.com/a572766789.js" crossorigin="anonymous"></script>
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<!-- eRobot CSS -->
+	<link rel="stylesheet" href="/static/css/style.min.css">
+
+	<title>eRobot</title>
+
+	<script src="/static/js/includeHTML.js"></script>
+	<script src="/static/js/includeRouter.js"></script>
+</head>
+
+<body>
+
+	<nav include-html="/static/html/nav.html"></nav>
+
+	<article id="content">
+		<header class="page-header" style="background-image: url(/static/images/header/header-dummy.png);">
+			<div class="container header">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#home"><i class="far fa-home"></i></a></li>
+					<li class="breadcrumb-item "><a href="01-type-check.html">회원가입</a></li>
+					<li class="breadcrumb-item active">##TITLE##회원으로 가입하기</li>
+				</ol>
+			</div>
+		</header>
+		<div id="join" class="page-container bg-light">
+			<div class="container">
+				<div class="row w-100">
+					<div class="col-12">
+						<ul class="list-unstyled join-steps">
+							<li class="on">약관동의</li>
+							<li>정보입력</li>
+							<li>가입완료</li>
+						</ul>
+					</div>
+					<div class="col-5 offset-1">
+						<div class="type-checker">
+							<h4>휴대폰 인증</h4>
+							<i class="far fa-mobile"></i>
+							<p class="desc">본인 명의의 휴대폰으로<br />
+								실명인증을 할 수 있습니다.</p>
+							<a href="" class="btn btn-primary btn-lg">휴대폰 인증하기</a>
+						</div>
+					</div>
+					<div class="col-5">
+						<div class="type-checker">
+							<h4>아이핀 인증</h4>
+							<i class="far fa-laptop"></i>
+							<p class="desc">인터넷 상에서 주민번호를 대신하여<br />
+								실명인증을 할 수 있습니다.</p>
+							<a href="" class="btn btn-primary btn-lg">아이핀(I-PIN) 인증하기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<footer include-html="/static/html/footer.html"></footer>
+	<!-- Optional JavaScript; choose one of the two! -->
+
+	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+	<!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+	 -->
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+	<!-- Initialize Swiper -->
+	<script>
+		includeHTML(function () {
+			// includeRouter(function () {
+			// 	// do something in the future
+			// });
+		});
+		var swiper = new Swiper('.swiper-container', {
+			pagination: {
+				el: '.swiper-pagination',
+				dynamicBullets: true,
+			},
+		});
+	</script>
+	<script src="/static/js/custom.js"></script>
+</body>
+
+</html>

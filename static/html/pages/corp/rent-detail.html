@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+	<!-- jQuery UI -->
+	<link href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.css" rel="stylesheet"/>
+	<!-- FontAwesome CSS -->
+	<script src="https://kit.fontawesome.com/a572766789.js" crossorigin="anonymous"></script>
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<!-- eRobot CSS -->
+	<link rel="stylesheet" href="/static/css/style.min.css">
+
+	<title>eRobot</title>
+
+	<script src="/static/js/includeHTML.js"></script>
+	<script src="/static/js/includeRouter.js"></script>
+</head>
+
+<body>
+
+	<nav include-html="/static/html/nav.html"></nav>
+
+	<article id="content">
+		<header class="page-header" style="background-image: url(/static/images/header/header-dummy.png);">
+			<div class="container header">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="../../index.html"><i class="far fa-home"></i></a></li>
+					<li class="breadcrumb-item "><a href="job.html">기업정보</a></li>
+					<li class="breadcrumb-item active">장비정보</li>
+				</ol>
+			</div>
+		</header>
+		<div id="my" class="page-container">
+			<div class="container">
+				<div class="side-container">
+					<div class="sidebar" id="snb">
+						<h4>기업정보</h4>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a class="nav-link " href="corp-list.html">로봇기업정보</a></li>
+							<li class="nav-item"><a class="nav-link " href="hardware-list.html">장비정보</a></li>
+							<li class="nav-item"><a class="nav-link active" href="rent-list.html">로봇렌탈</a>
+								<ul class="nav flex-column">
+									<li class="nav-item"><a class="nav-link " href="corp-list.html">등록관리</a></li>
+									<li class="nav-item"><a class="nav-link active" href="hardware-list.html">신청 내역 관리</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link " href="inquiry-list.html">도입문의</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="contents-container">
+					<h4 class="content-title">로봇렌탈</h4>
+
+
+					<div class="robot">
+						<div class="robot-img">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" style="background-image: url(/static/images/default-electricity.png);">
+										<img src="/static/images/default-electricity.png" alt="">
+									</div>
+									<div class="swiper-slide">
+										<img src="/static/images/default-electricity.png" alt="">
+									</div>
+									<div class="swiper-slide">
+										<img src="/static/images/default-electricity.png" alt="">
+									</div>
+								</div>
+								<!-- Add Pagination -->
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+						<div class="robot-info">
+							<div class="text-wrap">
+								<div class="header">
+									<p class="eng">Laser Machining Robot System</p>
+									<h4 class="mb-4">레이저 로봇 가공 시스템</h4>
+								</div>
+								<table class="table table-borderless">
+									<tbody>
+										<tr>
+											<th>로봇제작 기관명</th>
+											<td>한국기계연구원</td>
+										</tr>
+										<tr>
+											<th>주소</th>
+											<td>부산광역시 강서구 미음산다 5로 41번길 48<br />(미음동, 한국 계연구원)</td>
+										</tr>
+										<tr>
+											<th>대표자</th>
+											<td>서정</td>
+										</tr>
+										<tr>
+											<th>연락처</th>
+											<td>010-123-1234</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<span class="date">등록일자 2020.11.11</span>
+						</div>
+					</div>
+					<h5 class="mt-5">로봇 정보</h5>
+					<ul class="list-unstyled details-table">
+						<li>
+							<div class="th col-3">로봇명 (국문)</div>
+							<div class="td col-9">페이브텍 주식회사</div>
+						</li>
+						<li>
+							<div class="th col-3">로봇명 (영문)</div>
+							<div class="col-9">Favetech</div>
+						</li>
+						<li>
+							<div class="th col-3">로봇 분류</div>
+							<div class="col-9">기계가공·시험장비 > 성형/가공장비 > 레이저가공기</div>
+						</li>
+						<li>
+							<div class="th col-3">렌트 기간</div>
+							<div class="col-9">3년 이내</div>
+						</li>
+						<li>
+							<div class="th col-3">렌트 비용 정보</div>
+							<div class="col-9">구성에 따라 다름</div>
+						</li>
+					</ul>
+
+					<div class="content-body">
+						<h5>로봇 설명</h5>
+						<div class="box">
+							<div class="text-wrap">
+								<p>본 시스템은 항공, 원자력, 수송기계 등의 주요부품의 내구성 증대 등을 위해 레이저를 이용, 재료 표면에 레이저 피닝을 위한 주 가동기로 활용될 수 있다. 기존 레이저를 이용 재료 표면의 위치 및 이동 속도, 거리, 각도 및 형상의 다변화를 줄 수 있으며, 이를 통해 최적의 연구 테스트를 진행할수 있는 시스템이다.</p>
+							</div>
+						</div>
+						<h5>로봇 구성 및 성능</h5>
+						<div class="box">
+							<div class="text-wrap">
+								<p>본 시스템은 항공, 원자력, 수송기계 등의 주요부품의 내구성 증대 등을 위해 레이저를 이용, 재료 표면에 레이저 피닝을 위한 주 가동기로 활용될 수 있다. 기존 레이저를 이용 재료 표면의 위치 및 이동 속도, 거리, 각도 및 형상의 다변화를 줄 수 있으며, 이를 통해 최적의 연구 테스트를 진행할수 있는 시스템이다.</p>
+							</div>
+						</div>
+						<h5>첨부파일</h5>
+						<div class="box ">
+							<div class="box-attach">
+								<div class="attach">
+									<a href="#" class="badge badge-files">
+										<span class="name">2020년 NCS 기반 체험형 청년인턴 채용 공고문.pdf</span>
+										<span class="size">230KB</span>
+									</a>
+								</div>
+								<div class="attach">
+									<a href="#" class="badge badge-files">
+										<span class="name">2020년 NCS 기반 체험형 청년인턴 채용 공고문.pdf</span>
+										<span class="size">230KB</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="btn-set d-flex justify-content-between mt-5">
+						<a href="inquiry-list.html" class="btn btn-secondary btn-lg px-4">목록으로</a>
+						<a href="inquiry-list.html" class="btn btn-primary btn-lg px-4">렌탈 신청하기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<footer include-html="/static/html/footer.html"></footer>
+	<!-- Optional JavaScript; choose one of the two! -->
+
+	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+	<!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+	 -->
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+	<!-- Initialize Swiper -->
+	<script>
+		includeHTML(function () {
+			// includeRouter(function () {
+			// 	// do something in the future
+			// });
+		});
+		var swiper = new Swiper('.swiper-container', {
+			pagination: {
+				el: '.swiper-pagination',
+				dynamicBullets: true,
+			},
+		});
+	</script>
+	<script src="/static/js/custom.js"></script>
+</body>
+
+</html>

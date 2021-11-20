@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+	<!-- jQuery UI -->
+	<link href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.css" rel="stylesheet"/>
+	<!-- FontAwesome CSS -->
+	<script src="https://kit.fontawesome.com/a572766789.js" crossorigin="anonymous"></script>
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<!-- eRobot CSS -->
+	<link rel="stylesheet" href="/static/css/style.min.css">
+
+	<title>eRobot</title>
+
+	<script src="/static/js/includeHTML.js"></script>
+	<script src="/static/js/includeRouter.js"></script>
+</head>
+
+<body>
+
+	<nav include-html="/static/html/nav.html"></nav>
+
+	<article id="content">
+		<header class="page-header" style="background-image: url(/static/images/header/header-dummy.png);">
+			<div class="container header">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="../../index.html"><i class="far fa-home"></i></a></li>
+					<li class="breadcrumb-item "><a href="about.html">로봇활용기술소개</a></li>
+					<li class="breadcrumb-item"><a href="about.html">로봇활용기술이란?</a></li>
+				</ol>
+			</div>
+		</header>
+		<div id="about" class="page-container">
+			<div class="container">
+				<div class="side-container">
+					<div class="sidebar" id="snb">
+						<h4>로봇활용기술 소개</h4>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link active" href="/static/html/pages/about/about.html">로봇활용기술 소개</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link " href="/static/html/pages/about/provider.html">지원 기관 안내</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="contents-container">
+
+					<h4 class="content-title">로봇활용기술 소개</h4>
+					<div class="content-body">
+						<img src="/static/images/about/about.svg" alt="">
+						<h4>당 사이트는 제조공정 개선을 위한<br />로봇활용 기술확산 서비스 시스템을 제공합니다.</h4>
+						<p>산업별 제조공정 개선에 적용 가능한 로봇활용 공정모델을 발굴하고, 업종별 로봇활용 기술개발을 통한 DB를 수집하여, 제조공정 개선, 로봇활용 기술 활용 등의 사용자 중심의 기술확산 서비스 시스템을 구축을 목표로 합니다.</p>
+						<p>또한 로봇관련 기업 협력네트워크 구성 등의 다양한 로봇활용 기술확산 비즈니스 모델들을 개발하여, 제조공정 개선을 위한 로봇활용 기술이 확산될 수 있는 다양한 부가서비스를 제공하고자 합니다.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<footer include-html="/static/html/footer.html"></footer>
+	<!-- Optional JavaScript; choose one of the two! -->
+
+	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+	<!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+	 -->
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+	<!-- Initialize Swiper -->
+	<script>
+		includeHTML(function () {
+			// includeRouter(function () {
+			// 	// do something in the future
+			// });
+		});
+		var swiper = new Swiper('.swiper-container', {
+			pagination: {
+				el: '.swiper-pagination',
+				dynamicBullets: true,
+			},
+		});
+	</script>
+	<script src="/static/js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+	<!-- jQuery UI -->
+	<link href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.css" rel="stylesheet"/>
+	<!-- FontAwesome CSS -->
+	<script src="https://kit.fontawesome.com/a572766789.js" crossorigin="anonymous"></script>
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<!-- eRobot CSS -->
+	<link rel="stylesheet" href="/static/css/style.min.css">
+
+	<title>eRobot</title>
+
+	<script src="/static/js/includeHTML.js"></script>
+	<script src="/static/js/includeRouter.js"></script>
+</head>
+
+<body>
+
+	<nav include-html="/static/html/nav.html"></nav>
+
+	<div class="modal fade" id="blindArticle" tabindex="-1">
+		<div class="modal-dialog modal-sm modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">알림</h5>
+					<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fal fa-times"></i>
+					</button> -->
+				</div>
+				<div class="modal-body">
+					<p>비공개 글은 작성자와 <br />관리자만 확인할 수 있습니다.</p>
+				</div>
+				<div class="modal-footer">
+					<!-- <button type="button" class="btn btn-lg" data-dismiss="modal">취소</button> -->
+					<button type="button" class="btn btn-link btn-lg" data-dismiss="modal">확인</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<article id="content">
+		<header class="page-header" style="background-image: url(/static/images/header/header-dummy.png);">
+			<div class="container header">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="../../index.html"><i class="far fa-home"></i></a></li>
+					<li class="breadcrumb-item "><a href="search-list.html">정보활용</a></li>
+					<li class="breadcrumb-item active">로봇활용기술 검색</li>
+				</ol>
+			</div>
+		</header>
+		<div id="my" class="page-container">
+			<div class="container">
+				<div class="side-container">
+					<div class="sidebar" id="snb">
+						<h4>정보활용</h4>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a class="nav-link " href="search-list.html">로봇활용기술 검색</a></li>
+							<li class="nav-item"><a class="nav-link " href="apply.html">정보활용 신청</a></li>
+							<li class="nav-item"><a class="nav-link active" href="inquiry-list.html">문의하기</a></li>
+							<li class="nav-item"><a class="nav-link " href="add-list.html">로봇활용기술 등록</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="contents-container">
+
+					<h4 class="content-title">문의하기</h4>
+					<div class="tabs-nav">
+						<ul class="nav nav-pills nav-fill">
+							<li class="nav-item">
+								<a class="nav-link active" href="#">전체</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">로봇활용기술 활용 신청</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">로봇 도입</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">로봇 자동화 솔루션 도입</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="tc">
+						<h5>문의 목록 <a href="" class="btn btn-secondary btn-sm">문의하기</a></h5>
+						<div class="tc-f"></div>
+						<table class="table ">
+							<thead>
+								<tr>
+									<th scope="col" class="no text-center">No</th>
+									<th scope="col" style="min-width: 130px; text-align: center;">문의유형</th>
+									<th scope="col" class="text-center">제목</th>
+									<th scope="col" style="width: 110px; text-align: center;">작성자</th>
+									<th scope="col" style="width: 110px; text-align: center;">처리 상태</th>
+									<th scope="col" style="width: 80px; text-align: center;">공개여부</th>
+									<th scope="col" class="ymd text-center">등록일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>10</td>
+									<td>로봇 자동화 솔루션 도입</td>
+									<td>
+										<a href="" class="ellipsis">
+											문의 제목입니다. 테이블은 예시이므로 row가 더 많아질 수 있습니다. 가장 긴 제목의 경우 이런식으로 표현됩니다. 문의 제목입니다. 테이블은 예시이므로 row가 더 많아질 수 있습니다. 가장 긴 제목의 경우 이런식으로 표현됩니다.
+										</a>
+									</td>
+									<td>홍길동</td>
+									<td>답변 완료</td>
+									<td>공개</td>
+									<td>YYYY-MM-DD</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>로봇활용기술 활용 신청</td>
+									<td><a href="#blindArticle" data-toggle="modal" class="ellipsis blind">문의드립니다.</a></td>
+									<td>홍길동</td>
+									<td>답변 완료</td>
+									<td>비공개</td>
+									<td>YYYY-MM-DD</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>로봇 자동화 솔루션 도입</td>
+									<td><a href="#blindArticle" data-toggle="modal" class="ellipsis blind">문의드립니다.</a></td>
+									<td>홍길동</td>
+									<td>답변 완료</td>
+									<td>비공개</td>
+									<td>YYYY-MM-DD</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="tc-p">
+							<ul class="pagination justify-content-center">
+								<li class="page-item disabled">
+									<a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="far fa-angle-left"></i></a>
+								</li>
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item"><a class="page-link" href="#">5</a></li>
+								<li class="page-item">
+									<a class="page-link" href="#"><i class="far fa-angle-right"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<footer include-html="/static/html/footer.html"></footer>
+	<!-- Optional JavaScript; choose one of the two! -->
+
+	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+	<!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+	 -->
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+	<!-- Initialize Swiper -->
+	<script>
+		includeHTML(function () {
+			// includeRouter(function () {
+			// 	// do something in the future
+			// });
+		});
+		var swiper = new Swiper('.swiper-container', {
+			pagination: {
+				el: '.swiper-pagination',
+				dynamicBullets: true,
+			},
+		});
+		// $('#blindArticle').modal('show');
+	</script>
+	<script src="/static/js/custom.js"></script>
+</body>
+
+</html>
