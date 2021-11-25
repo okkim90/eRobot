@@ -3477,11 +3477,210 @@ footer {
 }
 
 
-.file_list ul,
-li {
+.file_list ul, li {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-;
+
+.membership {
+	@at-root .page-container & .content-title {
+		margin-bottom: 50px;
+	}
+	.sub_tit {
+		display: block;
+		font-size: 24px;
+		line-height: 28px;
+		font-weight: bold;
+		margin-bottom: 20px;
+		&.ty2 {
+			margin-bottom: 50px;
+		}
+	}
+	&_msg {
+		.membership_info {
+			padding: 0;
+			li {
+				font-size: 16px;
+				line-height: 24px;
+				padding-left: 12px;
+				position: relative;
+				&::before {
+					content:'';
+					position: absolute;
+					width: 5px;
+					height: 5px;
+					border-radius: 100%;
+					background-color: #0479dc;
+					left: 0;
+					top: 9px;
+				}
+			}
+			.txt_caution {
+				margin-top: 14px;
+			}
+		}
+	}
+	.txt_caution {
+		font-size: 16px;
+		line-height: 24px;
+		color: #666;
+		padding-left: 20px;
+		position: relative;
+		margin-bottom: 0;
+		&::before {
+			content:'※';
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+	&_benefits {
+		.sub_tit {
+			margin-bottom: 30px;
+		}
+		margin-top: 60px;
+		&_list {
+			display: flex;
+			margin: 0 -10px;
+			padding: 0;
+		}
+		li {
+			flex: 1;
+			vertical-align: top;
+			padding: 0 10px;
+			box-sizing: border-box;
+		}
+		&_cont {
+			padding: 32px 28px;
+			border: 1px solid #ddd;
+			text-align: center;
+			border-radius: 4px;
+			.ico_box {
+				margin-bottom: 10px;
+			}
+			strong {
+				display: block;
+				font-size: 18px;
+				line-height: 1;
+			}
+			p {
+				margin-bottom: 0;
+				font-size: 14px;
+				line-height: 20px;
+				margin-top: 9px;
+				color: #666;
+			}
+		}
+	}
+	.caution_box {
+		margin-top: 24px;
+		background-color: #f7f7f7;
+		padding: 20px;
+	}
+	.hl {
+		color: #0479dc;
+		text-decoration: underline;
+	}
+	.btn_membership {
+		width: 250px;
+		height: 56px;
+		border-radius: 8px;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	.member_info {
+		padding: 30px;
+		border: 8px solid #ddd;
+		border-radius: 4px;
+		&_tit {
+			display: block;
+			font-size: 24px;
+			line-height: 1;
+			margin-bottom: 24px;
+		}
+		&_list {
+			display: flex;
+			padding: 0;
+			padding-left: 13px;
+			position: relative;
+			font-size: 16px;
+			line-height: 24px;
+			margin: 0;
+			& + .member_info_list {
+				margin-top: 4px;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				width: 5px;
+				height: 5px;
+				border-radius: 100%;
+				background-color: #0479dc;
+				left: 0;
+				top: 9px;
+			}
+			dt {
+				font-weight: bold;
+				width: 100px;
+				flex-shrink: 0;
+			}
+			dd {
+				color: #666;
+				flex: 1;
+				margin-bottom: 0;
+			}
+		}
+	}
+	&_payment {
+		margin-top: 60px;
+		.payment_price {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #222;
+			strong {
+				font-size: 16px;
+			}
+			.price {
+				font-size: 24px;
+				line-height: 1;
+				color: #0479dc;
+				font-weight: bold;
+				margin-bottom: 0;
+			}
+		}
+		.payment_method {
+			display: flex;
+			padding: 20px 0;
+			align-items: center;
+			justify-content: space-between;
+			font-size: 16px;
+			line-height: 24px;
+			color: #666;
+			border-bottom: 1px solid #f2f2f2;
+		}
+	}
+}
+.tbl1 {
+	width: 100%;
+	td, th {
+		border: 1px solid #ececec;
+		font-size: 14px;
+		line-height: 20px;
+		padding: 12px 24px;
+		text-align: left;
+	}
+	th {
+		color: #222;
+		background-color: #fafafa;
+	}
+	td {
+		color: #666;
+	}
+}
+.fc_blue {
+	color: #0479dc !important;
+}
