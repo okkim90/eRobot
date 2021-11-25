@@ -3374,7 +3374,7 @@ footer {
 		margin-bottom: 0;
 	}
 	&_item {
-		
+
 		& + li {
 			margin-top: 20px;
 		}
@@ -3385,7 +3385,7 @@ footer {
 		box-sizing: border-box;
 		&:hover {
 			text-decoration: none;
-			
+
 		}
 		.img_box {
 			width: 205px;
@@ -3397,7 +3397,7 @@ footer {
 		}
 		.txt_box {
 			flex: 1;
-			padding: 20px;
+			padding: 18px 20px;
 			width: 100%;
 		}
 		.txt_tit_box {
@@ -3408,10 +3408,10 @@ footer {
 			.txt_tit {
 				display: block;
 				position: relative;
-				
+
 				font-size: 18px;
 				font-weight: 500;
-				line-height: 1;
+				line-height: 20px;
 				color: #373a3c;
 				overflow: hidden;
 				text-overflow: ellipsis;
@@ -3424,7 +3424,7 @@ footer {
 				color: #999;
 			}
 		}
-		
+
 		.desc {
 			font-size: 14px;
 			line-height: 17px;
@@ -3457,7 +3457,7 @@ footer {
 			padding: 0;
 			margin-top: 16px;
 			li + li {
-				margin-top: 4px;	
+				margin-top: 4px;
 			}
 			.file_item {
 				display: inline-block;
