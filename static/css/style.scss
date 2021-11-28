@@ -2359,7 +2359,6 @@ footer {
 		&+.nav {
 			border-top: 1px solid #ececec;
 		}
-
 		&-fill {
 			.nav-link {
 				border-radius: 0;
@@ -2371,9 +2370,13 @@ footer {
 					color: #fff;
 				}
 			}
+			&.type2 {
+				.nav-item {
+					flex: 1 1 0%;
+				}
+			}
 		}
 	}
-
 }
 
 .page-set {
@@ -2562,26 +2565,74 @@ footer {
 		background-color: #fff;
 		text-align: center;
 		padding: 60px;
-
+		&-wrap {
+			margin-top: -30px;
+			.col-5  {
+				margin-top: 30px;
+			}
+		}
 		h4 {
 			font-weight: bold;
 			color: $color-primary;
 			margin-bottom: 2rem;
 		}
-
 		.desc {
 			color: #999;
+			min-height: 3rem;
 		}
-
 		i {
 			display: block;
 			font-size: 75px;
 			color: $color-primary;
 			margin: 80px auto;
+			&.ico_box {
+				font-size: 0;
+			}
 		}
-
 		.btn {
 			margin-top: 2.5rem;
+		}
+	}
+
+	.tooltip {
+		&_box {
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			margin-top: 2px;
+			width: 24px;
+			height: 24px;
+			background-image: url(../images/ico_info.svg);
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		&_box:hover .tooltip_txt{
+			display: block;
+		}
+		&_txt {
+			display: none;
+			position: absolute;
+			top: calc(100% + 12px);
+			left: 0;
+			white-space: nowrap;
+			color: #fff;
+			background-color: rgba(0, 0, 0, 0.8);
+			border-radius: 2px;
+			font-size: 14px;
+			line-height: 1.4;
+			letter-spacing: -0.5px;
+			text-align: left;
+			font-weight: normal;
+			padding: 6px 10px;
+			&::before {
+				content: '';
+				position: absolute;
+				left: 8px;
+				bottom: 100%;
+				border-bottom: 8px solid rgba(0, 0, 0, 0.8);
+				border-right: 4px solid transparent;
+				border-left: 4px solid transparent;
+			}
 		}
 	}
 
@@ -3683,4 +3734,54 @@ footer {
 }
 .fc_blue {
 	color: #0479dc !important;
+}
+
+.cg_contents {
+	.tabs-nav {
+		margin-bottom: 50px;
+	}
+	.sub_tit {
+		margin-top: 0 !important;
+		font-size: 20px;
+		line-height: 1;
+		margin-bottom: 20px;
+	}
+	.img_box {
+		border: 1px solid #eee;
+		background-color: #f8f9fa;
+		padding: 50px 0;
+		text-align: center;
+		margin-top: 30px;
+	}
+	.sub_sec + .sub_sec {
+		margin-top: 30px;
+	}
+	.list_dot {
+		padding: 0;
+		li {
+			position: relative;
+			padding-left: 12px;
+			font-size: 14px;
+			line-height: 24px;
+			color: #666;
+		
+			&::before {
+				content:'';
+				position: absolute;
+				width: 4px;
+				height: 4px;
+				border-radius: 100%;
+				background-color: #666;
+				left: 0;
+				top: 10px;
+			}
+			.desc {
+				color: #999;
+			}
+			&.fc_blue {
+				color: #0479dc;
+			}
+
+		}
+	}
 }
