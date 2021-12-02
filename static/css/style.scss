@@ -2266,6 +2266,26 @@ footer {
 				}
 			}
 		}
+		&.ty_fixed {
+			table-layout: fixed;
+			th, td {
+				border-right: 1px solid #dee2e6;
+			}
+			th {
+				background-color: #fafafa;
+			}
+			thead th {
+				border-bottom: 1px solid #dee2e6;
+			}
+			tr {
+				th:last-child {
+					border-right: none;
+				}
+				td:last-child {
+					border-right: none;
+				}
+			}
+		}
 
 		thead,
 		tbody {
@@ -2359,11 +2379,36 @@ footer {
 		}
 
 		.tbl {
-			&_no {
-				width: 50px;
-			}
 			&_img {
-				width: 80px;
+				width: 100%;
+			}
+			&_file {
+
+				.badge-files {
+					max-width: 100%;
+					display: inline-flex;
+					flex-wrap: nowrap;
+
+					// overflow: hidden;
+					.name {
+						flex-basis: auto;
+						flex-grow: 0;
+						flex-shrink: 1;
+						// width: 100%;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						line-height: 1.2em;
+						height: 1.2em;
+					}
+
+					.size {
+						// width: 100%;
+						flex-shrink: 0;
+						flex-grow: 1;
+						margin-left: auto;
+						text-align: right;
+					}
+				}
 			}
 		}
 	}
