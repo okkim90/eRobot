@@ -2105,6 +2105,29 @@ footer {
 				margin: 0 6px;
 				margin-top: 6px;
 			}
+			&.ty2 {
+				margin: 0 -2px;
+				margin-top: 0;
+				margin-bottom: 8px;
+				text-align: left;
+				position: relative;
+				z-index: 10;
+				li {
+					margin: 0 2px;
+					margin-top: 0;
+				}
+				.robot_ico {
+					width: 29px;
+					height: 22px;
+					line-height: 22px;
+					font-size: 10px;
+					.ico_detail {
+						span {
+							font-size: 11px;
+						}
+					}
+				}
+			}
 		}
 
 	}
@@ -2333,6 +2356,15 @@ footer {
 		a {
 
 			text-decoration: none;
+		}
+
+		.tbl {
+			&_no {
+				width: 50px;
+			}
+			&_img {
+				width: 80px;
+			}
 		}
 	}
 
@@ -3764,7 +3796,7 @@ footer {
 			font-size: 14px;
 			line-height: 24px;
 			color: #666;
-		
+
 			&::before {
 				content:'';
 				position: absolute;
