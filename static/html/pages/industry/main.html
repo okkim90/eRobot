@@ -28,34 +28,14 @@
 
 	<nav include-html="/static/html/nav.html"></nav>
 
-
-	<div class="modal fade" id="blockUser" tabindex="-1">
-		<div class="modal-dialog modal-sm modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">알림</h5>
-					<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<i class="fal fa-times"></i>
-					</button> -->
-				</div>
-				<div class="modal-body">
-					<p>해당 메뉴는 기관 회원 <br />전용 메뉴입니다.</p>
-				</div>
-				<div class="modal-footer">
-					<!-- <button type="button" class="btn btn-lg" data-dismiss="modal">취소</button> -->
-					<button type="button" class="btn btn-link btn-lg" data-dismiss="modal">확인</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<article id="content">
 		<header class="page-header" style="background-image: url(/static/images/header/header-dummy.png);">
 			<div class="container header">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="../../index.html"><i class="far fa-home"></i></a></li>
-					<li class="breadcrumb-item "><a href="search-list.html">정보활용</a></li>
-					<li class="breadcrumb-item active">로봇활용기술 검색</li>
+					<li class="breadcrumb-item"><a href="">로봇활용기술 소개</a></li>
+					<li class="breadcrumb-item"><a href="">산업별 커뮤니티</a></li>
+					<li class="breadcrumb-item active">자동차</li>
 				</ol>
 			</div>
 		</header>
@@ -63,91 +43,47 @@
 			<div class="container">
 				<div class="side-container">
 					<div class="sidebar" id="snb">
-						<h4>정보활용</h4>
+						<h4 class="sidebar_tit btn_nav_industry" onclick="nav_industry()">자동차</h4>
+                        <ul class="nav_industry">
+                            <li><a href="">금속/플라스틱</a></li>
+                            <li><a href="">기계</a></li>
+                            <li><a href="">전자</a></li>
+                            <li class="active"><a href="">자동차</a></li>
+                            <li><a href="">섬유</a></li>
+                            <li><a href="">식품</a></li>
+                            <li><a href="">항공</a></li>
+                            <li><a href="">선박</a></li>
+                            <li><a href="">바이오/화학</a></li>
+                        </ul>
+                        <script>
+                            function nav_industry(){
+                                $('.nav_industry').toggleClass('active');
+                            }
+                        </script>
 						<ul class="nav flex-column">
-							<li class="nav-item"><a class="nav-link " href="search-list.html">로봇활용기술 검색</a></li>
-							<li class="nav-item"><a class="nav-link " href="apply.html">정보활용 신청</a></li>
-							<li class="nav-item"><a class="nav-link " href="inquiry-list.html">문의하기</a></li>
-							<li class="nav-item"><a class="nav-link active" href="add-list.html">로봇활용기술 등록</a></li>
-							<!-- 테스트용 버튼 -->
-							<li class="nav-item"><a class="nav-link " href="#blockUser" data-toggle="modal" style="font-size: 10px;">기관 회원이 아닌 회원이 눌렀을 때<br />알림 팝업 테스트 버튼</a></li>
-							<!-- /테스트용 버튼 -->
+							<li class="nav-item"><a class="nav-link " href="">메인</a></li>
+							<li class="nav-item"><a class="nav-link " href="">로봇활용기술</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">공지사항</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">자료실</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">Q&A</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">기술상담</a></li>
+							<li class="nav-item"><a class="nav-link active" href="">커뮤니티관리</a>
+								<ul class="nav flex-column">
+									<li class="nav-item"><a class="nav-link active" href="">대표관리자 지정</a></li>
+									<li class="nav-item"><a class="nav-link" href="">로봇활용기술 등록</a></li>
+									<li class="nav-item"><a class="nav-link" href="">게시판 관리</a></li>
+									<li class="nav-item"><a class="nav-link" href="">정보활용 신청내역</a></li>
+									<li class="nav-item"><a class="nav-link" href="">로봇활용기술 문의</a></li>
+									<li class="nav-item"><a class="nav-link" href="">1:1 상담 내역</a></li>
+									<li class="nav-item"><a class="nav-link" href="">커뮤니티소개 관리</a></li>
+								</ul>
+							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="contents-container">
 
-					<h4 class="content-title d-flex justify-content-start">
-						로봇활용기술 등록
-						<span class="small pl-2">등록한 로봇활용기술</span>
-						<a href="add-write.html" class="btn btn-primary ml-auto">등록하기</a>
-					</h4>
-
-					<div class="row sort-container">
-						<div class="col-2">
-							<select class="custom-select" id="inputGroupSelect01">
-								<option value="1" selected>산업분야</option>
-								<option value="2">로봇</option>
-								<option value="2">로봇S/W</option>
-								<option value="3">주변장치</option>
-								<option value="3">로봇활용기술</option>
-								<option value="3">공정</option>
-							</select>
-						</div>
-						<div class="col-2">
-							<select class="custom-select" id="inputGroupSelect02">
-								<option value="1" selected>도입로봇</option>
-								<option value="2">기업명</option>
-							</select>
-						</div>
-						<div class="col-2">
-							<select class="custom-select" id="inputGroupSelect02">
-								<option value="1" selected>주변장치</option>
-								<option value="2">기업명</option>
-							</select>
-						</div>
-						<div class="col-2">
-							<select class="custom-select" id="inputGroupSelect02">
-								<option value="1" selected>주요공정</option>
-								<option value="2">기업명</option>
-							</select>
-						</div>
-						<div class="col-3">
-							<input type="text" class="form-control" placeholder="검색어를 입력하세요.">
-						</div>
-						<div class="col-1">
-							<button class="btn btn-block btn-primary">
-								<i class="far fa-search"></i>
-							</button>
-						</div>
-					</div>
-					<div class="popular">
-						<ul class="list-unstyled">
-							<li class="title">인기 검색어</li>
-							<li><a href="" class="badge badge-pill badge-line">모델명</a></li>
-							<li><a href="" class="badge badge-pill badge-line">모델명모델명</a></li>
-							<li><a href="" class="badge badge-pill badge-line">모델명 모델명모델명</a></li>
-							<li><a href="" class="badge badge-pill badge-line">모델명</a></li>
-							<li><a href="" class="badge badge-pill badge-line">모델명 모델명모델명</a></li>
-						</ul>
-					</div>
-
-					<div class="sort mb-4 d-flex justify-content-between align-items-center">
-						<span class="total">총 195,291개</span>
-						<div class="view-sort">
-							<div class="btn-group btn-group-toggle" data-toggle="buttons">
-								<label class="btn btn-outline-light active">
-									<input type="radio" name="options" id="option1" checked> 이름순
-								</label>
-								<label class="btn btn-outline-light">
-									<input type="radio" name="options" id="option2"> 최신순
-								</label>
-								<label class="btn btn-outline-light">
-									<input type="radio" name="options" id="option3"> 오래된순
-								</label>
-							</div>
-						</div>
-					</div>
+					<h4 class="content-title">자동차</h4>
 
 					<div class="row row-cols-3">
 						<div class="col mb-4">
@@ -171,10 +107,10 @@
 											<div class="robot_ico ico_proc_4">D<div class="ico_detail"><span>델타로봇</span></div></div>
 										</li>
 										<li>
-											<div class="robot_ico ico_proc_5">AGV<div class="ico_detail"><span>Automated Guided Vehicle</span></div></div>
+											<div class="robot_ico ico_proc_5">A<div class="ico_detail"><span>Automated Guided Vehicle</span></div></div>
 										</li>
 										<li>
-											<div class="robot_ico ico_proc_6">AMR<div class="ico_detail"><span>Autonomous Mobile Robot</span></div></div>
+											<div class="robot_ico ico_proc_6">R<div class="ico_detail"><span>Autonomous Mobile Robot</span></div></div>
 										</li>
 									</ul>
 									<div class="card-eng">Laser Machining Robot System</div>
@@ -215,10 +151,10 @@
 											<div class="robot_ico ico_proc_4">D<div class="ico_detail"><span>델타로봇</span></div></div>
 										</li>
 										<li>
-											<div class="robot_ico ico_proc_5">AGV<div class="ico_detail"><span>Automated Guided Vehicle</span></div></div>
+											<div class="robot_ico ico_proc_5">A<div class="ico_detail"><span>Automated Guided Vehicle</span></div></div>
 										</li>
 										<li>
-											<div class="robot_ico ico_proc_6">AMR<div class="ico_detail"><span>Autonomous Mobile Robot</span></div></div>
+											<div class="robot_ico ico_proc_6">R<div class="ico_detail"><span>Autonomous Mobile Robot</span></div></div>
 										</li>
 									</ul>
 									<div class="card-eng">Laser Machining Robot System</div>
@@ -323,9 +259,9 @@
 							</div>
 						</div>
 					</div>
-					<ul class="pagination justify-content-center mt-3">
+                    <ul class="pagination justify-content-center mt-3">
 						<li class="page-item disabled">
-							<a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="far fa-angle-left"></i></a>
+							<a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="far fa-angle-left" aria-hidden="true"></i></a>
 						</li>
 						<li class="page-item active"><a class="page-link" href="#">1</a></li>
 						<li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -333,9 +269,39 @@
 						<li class="page-item"><a class="page-link" href="#">4</a></li>
 						<li class="page-item"><a class="page-link" href="#">5</a></li>
 						<li class="page-item">
-							<a class="page-link" href="#"><i class="far fa-angle-right"></i></a>
+							<a class="page-link" href="#"><i class="far fa-angle-right" aria-hidden="true"></i></a>
 						</li>
 					</ul>
+                    <div class="row boards_industry">
+						<div class="col-6">
+							<div class="boards-notice">
+								<h4 class="boards-title"><i class="far fa-comment-alt-exclamation" aria-hidden="true"></i> 공지사항<a href=""><i class="fal fa-plus" aria-hidden="true"></i> 더보기</a></h4>
+								<div class="boards-body list">
+									<ul class="list-unstyled m-0">
+										<li><a href=""><span class="title">로봇활용기술 오류 관련 공지사항 로봇활용기술 오류 관련 공지사항 로봇활용기술 오류 관련 공지사항 로봇활용기술 오류 관련 공지사항 로봇활용기술 오류 관련 공지사항</span><span class="date">2020-11-11</span></a></li>
+										<li><a href=""><span class="title">로봇활용기술 오류 관련 공지사항 로봇활용기술 오류 관련 공지사항 로봇활용기술 오류 관련 공지사항 로봇활용기술 오류 관련 공지사항 로봇활용기술 오류 관련 공지사항</span><span class="date">2020-11-11</span></a></li>
+										<li><a href=""><span class="title">로봇활용기술 오류 관련 공지사항</span><span class="date">2020-11-11</span></a></li>
+										<li><a href=""><span class="title">로봇활용기술 오류 관련 공지사항</span><span class="date">2020-11-11</span></a></li>
+										<li><a href=""><span class="title">로봇활용기술 오류 관련 공지사항</span><span class="date">2020-11-11</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="boards-notice">
+								<h4 class="boards-title"><i class="far fa-file-download" aria-hidden="true"></i> 자료실<a href=""><i class="fal fa-plus" aria-hidden="true"></i> 더보기</a></h4>
+								<div class="boards-body list">
+									<ul class="list-unstyled m-0">
+										<li><a href=""><span class="title">로봇활용기술 오류 관련 공지사항 로봇활용기술 오류 관련 공지사항 로봇활용기술 오류 관련 공지사항 로봇활용기술 오류 관련 공지사항 로봇활용기술 오류 관련 공지사항</span><span class="date">2020-11-11</span></a></li>
+										<li><a href=""><span class="title">로봇활용기술 오류 관련 공지사항</span><span class="date">2020-11-11</span></a></li>
+										<li><a href=""><span class="title">로봇활용기술 오류 관련 공지사항</span><span class="date">2020-11-11</span></a></li>
+										<li><a href=""><span class="title">로봇활용기술 오류 관련 공지사항</span><span class="date">2020-11-11</span></a></li>
+										<li><a href=""><span class="title">로봇활용기술 오류 관련 공지사항</span><span class="date">2020-11-11</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="ko">
 
@@ -33,9 +32,10 @@
 		<header class="page-header" style="background-image: url(/static/images/header/header-dummy.png);">
 			<div class="container header">
 				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="#home"><i class="far fa-home"></i></a></li>
-					<li class="breadcrumb-item "><a href="robot-list.html">기업정보</a></li>
-					<li class="breadcrumb-item active">도입문의</li>
+					<li class="breadcrumb-item"><a href="../../index.html"><i class="far fa-home"></i></a></li>
+					<li class="breadcrumb-item"><a href="">로봇활용기술 소개</a></li>
+					<li class="breadcrumb-item"><a href="">산업별 커뮤니티</a></li>
+					<li class="breadcrumb-item active">자동차</li>
 				</ol>
 			</div>
 		</header>
@@ -43,46 +43,58 @@
 			<div class="container">
 				<div class="side-container">
 					<div class="sidebar" id="snb">
-						<h4>기업정보</h4>
+						<h4 class="sidebar_tit btn_nav_industry" onclick="nav_industry()">자동차</h4>
+                        <ul class="nav_industry">
+                            <li><a href="">금속/플라스틱</a></li>
+                            <li><a href="">기계</a></li>
+                            <li><a href="">전자</a></li>
+                            <li class="active"><a href="">자동차</a></li>
+                            <li><a href="">섬유</a></li>
+                            <li><a href="">식품</a></li>
+                            <li><a href="">항공</a></li>
+                            <li><a href="">선박</a></li>
+                            <li><a href="">바이오/화학</a></li>
+                        </ul>
+                        <script>
+                            function nav_industry(){
+                                $('.nav_industry').toggleClass('active');
+                            }
+                        </script>
 						<ul class="nav flex-column">
-							<li class="nav-item"><a class="nav-link " href="corp-list.html">로봇기업정보</a></li>
-							<li class="nav-item"><a class="nav-link " href="hardware-list.html">장비정보</a></li>
-							<li class="nav-item"><a class="nav-link " href="rent-list.html">로봇렌탈</a>
+							<li class="nav-item"><a class="nav-link " href="">메인</a></li>
+							<li class="nav-item"><a class="nav-link " href="">로봇활용기술</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">공지사항</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">자료실</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">Q&A</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">기술상담</a></li>
+							<li class="nav-item"><a class="nav-link active" href="">커뮤니티관리</a>
+								<ul class="nav flex-column">
+									<li class="nav-item"><a class="nav-link" href="">대표관리자 지정</a></li>
+									<li class="nav-item"><a class="nav-link" href="">로봇활용기술 등록</a></li>
+									<li class="nav-item"><a class="nav-link" href="">게시판 관리</a></li>
+									<li class="nav-item"><a class="nav-link" href="">정보활용 신청내역</a></li>
+									<li class="nav-item"><a class="nav-link" href="">로봇활용기술 문의</a></li>
+									<li class="nav-item"><a class="nav-link active" href="">1:1 상담 내역</a></li>
+									<li class="nav-item"><a class="nav-link" href="">커뮤니티소개 관리</a></li>
+								</ul>
 							</li>
-							<li class="nav-item"><a class="nav-link active" href="question-list.html">도입문의</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="contents-container">
 
-					<h4 class="content-title d-flex justify-content-between">문의하기<span class="desc">별표(*) 표시는 필수 입력 항목입니다.</span></h4>
-
+					<h4 class="content-title">1:1 상담 요청</h4>
 					<form>
-
 						<div class="form-group">
 							<label for="inputTitle" class="col-form-label required">제목</label>
 							<input type="text" class="form-control is-invalid" id="inputTitle" placeholder="제목을 입력해주세요.">
 							<div class="invalid-feedback">제목을 입력해 주세요.</div>
 						</div>
-
-						<div class="form-group">
-							<label for="slctCategory" class="col-form-label required">문의유형</label>
-							<select class="custom-select is-invalid" id="slctCategory" required>
-								<option selected disabled value="">문의유형</option>
-								<option value="">로봇</option>
-								<option value="">주변장치</option>
-								<option value="">S/W</option>
-								<option value="">기타</option>
-							</select>
-							<div class="invalid-feedback">문의유형을 선택해 주세요.</div>
-						</div>
-
 						<div class="form-group">
 							<label for="inputArticle" class="col-form-label required">내용</label>
-							<textarea class="form-control is-invalid" id="inputArticle" rows="8" required></textarea>
-							<div class="invalid-feedback">내용을 입력해 주세요.</div>
+							<textarea class="form-control is-invalid" id="inputArticle" rows="3" required=""></textarea>
+							<div class="invalid-feedback">문의 내용을 입력해 주세요.</div>
 						</div>
-
 						<div class="form-group">
 							<label for="inputTitle" class="col-form-label">첨부 파일</label>
 							<div class="custom-file mt-2">
@@ -93,7 +105,7 @@
 							<!-- 파일이 없을 때 -->
 							<div class="drop-zone">
 								<div class="noti">
-									<i class="fal fa-file-upload"></i>
+									<i class="fal fa-file-upload" aria-hidden="true"></i>
 									마우스로 파일을 끌어오세요.
 								</div>
 							</div>
@@ -140,13 +152,27 @@
 								</div>
 							</div>
 						</div>
-
-						<div class="divider divider-grey"></div>
+                        <div class="form-group border-bottom border-top py-4">
+                            <div class="mb-3">
+                                <strong>답변내용 이메일로 받으시겠습니까?</strong> <br>
+                                회원가입시 입력하신 이메일 주소 <a href="mailto:user@company.com">user@company.com</a>  로 전송합니다. <br>
+                                 ※ 등록된 이메일 주소가 잘못되었을 경우 <a href="">회원정보</a>에서 수정하신 후 이용 바랍니다.
+                            </div>
+							<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" id="Y" name="YN" value="Y" class="custom-control-input" checked="">
+								<label class="custom-control-label" for="Y">예</label>
+							</div>
+							<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" id="N" name="YN" value="N" class="custom-control-input">
+								<label class="custom-control-label" for="N">아니오</label>
+							</div>
+						</div>
 					</form>
 
-					<div class="btn-set d-flex justify-content-between mt-5">
-						<a href="inquiry-list.html" class="btn-secondary btn-lg px-4">목록으로</a>
-						<a href="inquiry-list.html" class="btn btn-primary btn-lg px-4">등록하기</a>
+
+
+					<div class="btn-set d-flex justify-content-end mt-5">
+						<a href="" class="btn btn-primary btn-lg px-4">상담 신청하기</a>
 					</div>
 				</div>
 			</div>
