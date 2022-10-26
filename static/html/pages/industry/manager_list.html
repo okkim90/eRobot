@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+	<!-- jQuery UI -->
+	<link href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.css" rel="stylesheet"/>
+	<!-- FontAwesome CSS -->
+	<script src="https://kit.fontawesome.com/a572766789.js" crossorigin="anonymous"></script>
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<!-- eRobot CSS -->
+	<link rel="stylesheet" href="/static/css/style.css">
+
+	<title>eRobot</title>
+
+	<script src="/static/js/includeHTML.js"></script>
+	<script src="/static/js/includeRouter.js"></script>
+</head>
+
+<body>
+
+	<nav include-html="/static/html/nav.html"></nav>
+
+	<article id="content">
+		<header class="page-header" style="background-image: url(/static/images/header/header-dummy.png);">
+			<div class="container header">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="../../index.html"><i class="far fa-home"></i></a></li>
+					<li class="breadcrumb-item"><a href="">로봇활용기술 소개</a></li>
+					<li class="breadcrumb-item"><a href="">산업별 커뮤니티</a></li>
+					<li class="breadcrumb-item active">자동차</li>
+				</ol>
+			</div>
+		</header>
+		<div id="my" class="page-container">
+			<div class="container">
+				<div class="side-container">
+					<div class="sidebar" id="snb">
+						<h4 class="sidebar_tit btn_nav_industry" onclick="nav_industry()">자동차</h4>
+                        <ul class="nav_industry">
+                            <li><a href="">금속/플라스틱</a></li>
+                            <li><a href="">기계</a></li>
+                            <li><a href="">전자</a></li>
+                            <li class="active"><a href="">자동차</a></li>
+                            <li><a href="">섬유</a></li>
+                            <li><a href="">식품</a></li>
+                            <li><a href="">항공</a></li>
+                            <li><a href="">선박</a></li>
+                            <li><a href="">바이오/화학</a></li>
+                        </ul>
+                        <script>
+                            function nav_industry(){
+                                $('.nav_industry').toggleClass('active');
+                            }
+                        </script>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a class="nav-link " href="">메인</a></li>
+							<li class="nav-item"><a class="nav-link " href="">로봇활용기술</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">공지사항</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">자료실</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">Q&A</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">기술상담</a></li>
+							<li class="nav-item"><a class="nav-link active" href="">커뮤니티관리</a>
+								<ul class="nav flex-column">
+									<li class="nav-item"><a class="nav-link active" href="">대표관리자 지정</a></li>
+									<li class="nav-item"><a class="nav-link" href="">로봇활용기술 등록</a></li>
+									<li class="nav-item"><a class="nav-link" href="">게시판 관리</a></li>
+									<li class="nav-item"><a class="nav-link" href="">정보활용 신청내역</a></li>
+									<li class="nav-item"><a class="nav-link" href="">로봇활용기술 문의</a></li>
+									<li class="nav-item"><a class="nav-link" href="">1:1 상담 내역</a></li>
+									<li class="nav-item"><a class="nav-link" href="">커뮤니티소개 관리</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="contents-container">
+
+					<h4 class="content-title">대표 관리자 지정</h4>
+
+					<div class="row sort-container">
+						<div class="col-3">
+							<select class="custom-select" id="inputGroupSelect01">
+								<option value="1" selected="">이름</option>
+								<option value="2">이메일</option>
+							 </select>
+						</div>
+						<div class="col-8">
+							<input type="text" class="form-control" placeholder="검색어를 입력하세요.">
+						</div>
+						<div class="col-1">
+							<button class="btn btn-block btn-primary">
+								<i class="far fa-search" aria-hidden="true"></i>
+							</button>
+						</div>
+					</div>
+
+					<div class="tc">
+						<div class="tc-f d-flex align-items-end">
+                            총 195,123개
+                            <a href="" class="btn btn-primary ml-auto">대표 관리자 변경하기</a>
+                        </div>
+						<table class="table text-center">
+							<thead>
+								<tr>
+									<th scope="col" style="width: 5%;">No</th>
+									<th scope="col" style="width: 15%">대표관리자</th>
+									<th scope="col" style="width: 10%;">이름</th>
+									<th scope="col" style="width: 10%;">직위</th>
+									<th scope="col" style="width: 35%;">이메일 주소</th>
+									<th scope="col" style="width: 25%;">가입일/최근로그인</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td><input class="" type="checkbox" value=""></td>
+									<td>홍길동</td>
+									<td>직위</td>
+									<td>testteddst@test.test</td>
+									<td>2022-10-01 / 2022-10-01 </td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td><input class="" type="checkbox" value=""></td>
+									<td>홍길동</td>
+									<td>직위</td>
+									<td>testteddst@test.test</td>
+									<td>2022-10-01 / 2022-10-01 </td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td><input class="" type="checkbox" value=""></td>
+									<td>홍길동</td>
+									<td>직위</td>
+									<td>testteddst@test.test</td>
+									<td>2022-12-25 / 2022-12-22 </td>
+								</tr>
+                                <tr>
+									<td>4</td>
+									<td><input class="" type="checkbox" value=""></td>
+									<td>홍길동</td>
+									<td>직위</td>
+									<td>testteddst@test.test</td>
+									<td>2022-10-01 / 2022-10-01 </td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td><input class="" type="checkbox" value=""></td>
+									<td>홍길동</td>
+									<td>직위</td>
+									<td>testteddst@test.test</td>
+									<td>2022-12-25 / 2022-12-22 </td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="tc-p">
+							<ul class="pagination justify-content-center">
+								<li class="page-item disabled">
+									<a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="far fa-angle-left" aria-hidden="true"></i></a>
+								</li>
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item"><a class="page-link" href="#">5</a></li>
+								<li class="page-item">
+									<a class="page-link" href="#"><i class="far fa-angle-right" aria-hidden="true"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<footer include-html="/static/html/footer.html"></footer>
+	<!-- Optional JavaScript; choose one of the two! -->
+
+	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+	<!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+	 -->
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+	<!-- Initialize Swiper -->
+	<script>
+		includeHTML(function () {
+			// includeRouter(function () {
+			// 	// do something in the future
+			// });
+		});
+		var swiper = new Swiper('.swiper-container', {
+			pagination: {
+				el: '.swiper-pagination',
+				dynamicBullets: true,
+			},
+		});
+	</script>
+	<script src="/static/js/custom.js"></script>
+</body>
+
+</html>
