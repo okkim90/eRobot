@@ -58,17 +58,13 @@
   color: #002E51;
 }
 .boards_industry .boards-body {
-  border: 1px solid #eaeaea;
-  padding: 30px 30px 10px;
+  border-top: 1px solid #000;
 }
 .boards_industry .boards-body li a {
   color: #666;
 }
 .boards_industry .boards-body li a .date {
   color: #999999;
-}
-.boards_industry .boards-body.list {
-  padding-top: 10px;
 }
 .boards_industry .boards-body.list li {
   border-top: 1px solid #eaeaea;
@@ -1799,6 +1795,21 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   border-radius: 0;
   height: 52px;
   font-weight: 14px;
+}
+
+.form-group.ty-email-answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  border: 4px solid #ececec;
+}
+.form-group.ty-email-answer .radio-group {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .form-group .required::after {

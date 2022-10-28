@@ -1950,6 +1950,17 @@ input[type=number] {
   }
 }
 
+.form-group {
+  &.ty-email-answer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 4px solid #ececec;
+    .radio-group {
+      flex-shrink: 0;
+    }
+  }
+}
 .form-group .required::after {
   content: '*';
   color: #0479DC;
