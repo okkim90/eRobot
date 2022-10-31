@@ -16,20 +16,20 @@
 	<!-- Link Swiper's CSS -->
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<!-- eRobot CSS -->
-	<link rel="stylesheet" href="/static/css/style.css">
+	<link rel="stylesheet" href="../../../css/style.css">
 
 	<title>eRobot</title>
 
-	<script src="/static/js/includeHTML.js"></script>
-	<script src="/static/js/includeRouter.js"></script>
+	<script src="../../../js/includeHTML.js"></script>
+	<script src="../../../js/includeRouter.js"></script>
 </head>
 
 <body>
 
-	<nav include-html="/static/html/nav.html"></nav>
+	<nav include-html="../../../html/nav.html"></nav>
 
 	<article id="content">
-		<header class="page-header" style="background-image: url(/static/images/header/header-dummy.png);">
+		<header class="page-header" style="background-image: url(../../../images/header/header-dummy.png);">
 			<div class="container header">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="../../index.html"><i class="far fa-home"></i></a></li>
@@ -152,19 +152,21 @@
 								</div>
 							</div>
 						</div>
-                        <div class="form-group border-bottom border-top py-4">
-                            <div class="mb-3">
-                                <strong>답변내용 이메일로 받으시겠습니까?</strong> <br>
-                                회원가입시 입력하신 이메일 주소 <a href="mailto:user@company.com">user@company.com</a>  로 전송합니다. <br>
-                                 ※ 등록된 이메일 주소가 잘못되었을 경우 <a href="">회원정보</a>에서 수정하신 후 이용 바랍니다.
-                            </div>
-							<div class="custom-control custom-radio custom-control-inline">
-								<input type="radio" id="Y" name="YN" value="Y" class="custom-control-input" checked="">
-								<label class="custom-control-label" for="Y">예</label>
+                        <div class="form-group ty-email-answer">
+							<div class="">
+								<h6 class="mt-0">답변내용 이메일로 받으시겠습니까?</h6>
+								회원가입시 입력하신 이메일 주소 <a href="mailto:user@company.com" class="text-decoration-underline">user@company.com</a>  로 전송합니다. <br>
+								 ※ 등록된 이메일 주소가 잘못되었을 경우 <a href="" class="text-decoration-underline">회원정보</a>에서 수정하신 후 이용 바랍니다.
 							</div>
-							<div class="custom-control custom-radio custom-control-inline">
-								<input type="radio" id="N" name="YN" value="N" class="custom-control-input">
-								<label class="custom-control-label" for="N">아니오</label>
+							<div class="radio-group">
+								<div class="custom-control custom-radio custom-control-inline">
+									<input type="radio" id="Y" name="YN" value="Y" class="custom-control-input" checked="">
+									<label class="custom-control-label" for="Y">예</label>
+								</div>
+								<div class="custom-control custom-radio custom-control-inline">
+									<input type="radio" id="N" name="YN" value="N" class="custom-control-input">
+									<label class="custom-control-label" for="N">아니오</label>
+								</div>
 							</div>
 						</div>
 					</form>
@@ -178,7 +180,7 @@
 			</div>
 		</div>
 	</article>
-	<footer include-html="/static/html/footer.html"></footer>
+	<footer include-html="../../../html/footer.html"></footer>
 	<!-- Optional JavaScript; choose one of the two! -->
 
 	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -210,7 +212,7 @@
 			},
 		});
 	</script>
-	<script src="/static/js/custom.js"></script>
+	<script src="../../../js/custom.js"></script>
 </body>
 
 </html>
