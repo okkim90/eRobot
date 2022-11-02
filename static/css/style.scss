@@ -2972,6 +2972,30 @@ input[type=number] {
   margin-top: 20px;
   border-radius: 4px;
 
+  &-wrap {
+    &.ty-preview {
+      display: flex;
+      align-items: center;
+      .drop-zone {
+        margin-top: 0;
+        flex: 1;
+      }
+      .preview_img {
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+        margin-left: 15px;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
   &.in-drop {
     border: 1px solid #ced4da;
   }
@@ -3188,6 +3212,16 @@ input[type=number] {
   border-top: 1px solid #4f4f4f;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+  .table {
+    tbody {
+      & + tbody {
+        border-width: 1px;
+      }
+    }
+    tfoot {
+      border-top: 1px solid #dee2e6;
+    }
+  }
 }
 
 .form_list_item {
@@ -3233,6 +3267,33 @@ input[type=number] {
     text-align: center;
   }
 }
+
+
+.table {
+  #tbl-sortable {
+    .sortable-item {
+      cursor: grab;
+      &.ui-sortable-helper {
+        td {
+          border-bottom: 1px solid #F0F2F3;
+          background-color: #fff;
+        }
+      }
+    }
+    tr.placeholderBackground {
+      background-color: rgba(#007bff,.2);
+    }
+  }
+}
+
+.ico_re {
+  display: inline-block;
+  padding-right: 6px;
+  &.dep2 {
+    padding-left: 12px;
+  }
+}
+
 
 .input-group.phone {
   .form-control, .custom-select {

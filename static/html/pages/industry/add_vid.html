@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+
+    <!-- jQuery UI -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.css" rel="stylesheet" />
+    <!-- FontAwesome CSS -->
+    <script src="https://kit.fontawesome.com/a572766789.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- eRobot CSS -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <title>eRobot</title>
+
+    <script src="../../../js/includeHTML.js"></script>
+    <script src="../../../js/includeRouter.js"></script>
+</head>
+
+<body>
+
+    <nav include-html="../../../html/nav.html"></nav>
+
+    <article id="content">
+        <header class="page-header" style="background-image: url(../../../images/header/header-dummy.png);">
+            <div class="container header">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../../index.html"><i class="far fa-home"></i></a></li>
+                    <li class="breadcrumb-item"><a href="">로봇활용기술 소개</a></li>
+                    <li class="breadcrumb-item"><a href="">산업별 커뮤니티</a></li>
+                    <li class="breadcrumb-item active">자동차</li>
+                </ol>
+            </div>
+        </header>
+        <div id="my" class="page-container">
+            <div class="container">
+                <div class="side-container">
+                    <div class="sidebar" id="snb">
+                        <h4 class="sidebar_tit btn_nav_industry" onclick="nav_industry()">자동차</h4>
+                        <ul class="nav_industry">
+                            <li><a href="">금속/플라스틱</a></li>
+                            <li><a href="">기계</a></li>
+                            <li><a href="">전자</a></li>
+                            <li class="active"><a href="">자동차</a></li>
+                            <li><a href="">섬유</a></li>
+                            <li><a href="">식품</a></li>
+                            <li><a href="">항공</a></li>
+                            <li><a href="">선박</a></li>
+                            <li><a href="">바이오/화학</a></li>
+                        </ul>
+                        <script>
+                            function nav_industry() {
+                                $('.nav_industry').toggleClass('active');
+                            }
+                        </script>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link " href="">메인</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">로봇활용기술</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">공지사항</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">자료실</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">Q&A</a></li>
+                            <li class="nav-item"><a class="nav-link " href="">기술상담</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="">커뮤니티관리</a>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href="">대표관리자 지정</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="">로봇활용기술 등록</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="">게시판 관리</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="">정보활용 신청내역</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="">로봇활용기술 문의</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="">1:1 상담 내역</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="">커뮤니티소개 관리</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contents-container">
+
+                    <h4 class="content-title">로봇활용기술 등록</h4>
+                    <div class="tc mt-0">
+                        <h5 class="">동영상 정보</h5>
+                        <div class="tc-f"></div>
+                        <div class="form_list_wrap">
+                            <div class="form_list">
+                                <table class="table" id="">
+                                    <thead>
+                                    </thead>
+                                    <colgroup>
+                                        <col width="5%">
+                                        <col width="15%">
+                                        <col width="70%">
+                                        <col width="10%">
+                                    </colgroup>
+
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="4"><button type="button" id="" class="btn btn-outline-secondary btn-block" onclick="">동영상 추가</button></td>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="4" class="text-center">
+                                                &nbsp; <br> 등록된 동영상이 없습니다. <br> &nbsp;
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4" class="text-center">1</td>
+                                            <th>동영상 제목*</th>
+                                            <td>
+                                                <input type="text" name="" value="" class="form-control " placeholder="" required="" data-label="">
+                                            </td>
+                                            <td rowspan="4" class="text-center" style="border-left: 1px solid #F0F2F3;">
+                                                <button type="button" class="btn btn-outline-secondary btn-sm" onclick="removeLine(this);">삭제</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>동영상 URL*</th>
+                                            <td>
+                                                <input type="text" name="" value="" class="form-control " placeholder="" required="" data-label="">
+                                                <p class="mb-0 mt-2">※ 유튜브 영상 소스코드 복사내용에서 src 내에 포함된 주소 정보 입력 <br> 예) https://www.youtube.com/embed/HeSWsLGNSzg</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>동영상 <br> 썸네일 이미지*</th>
+                                            <td>
+                                                <div class="drop-zone-wrap ty-preview">
+                                                    <div class="drop-zone file-edit dm-uploader add_img" id="dropzone-img-robot-n0">
+                                                        <input type="file" name="uploadFile" id="uploadBtn" class="custom-file-input uploadBtn" multiple="" title="파일 찾아보기">
+                                                        <div class="file-box file_list" id="files">
+                                                            <ul class="">
+                                                                <li class="empty" style="display: list-item;">
+                                                                    <div class="noti">
+                                                                        <i class="fal fa-file-upload" aria-hidden="true"></i>마우스로 이미지 파일을 끌어오세요.
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <input type="hidden" name="robotImgSeq" value="_">
+                                                    </div>
+                                                    <div class="preview_img">
+                                                        <img src="/static/images/default-electricity.png" class="uploadImg" onerror="this.src='/static/images/default-electricity.png'; this.onerror=null;">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>노출 여부*</th>
+                                            <td>
+                                                <div class="radio-group">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" id="Y2" name="YN2" value="Y" class="custom-control-input" checked="">
+                                                        <label class="custom-control-label" for="Y2">공개</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" id="N2" name="YN2" value="N" class="custom-control-input">
+                                                        <label class="custom-control-label" for="N2">비공개</label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4" class="text-center">2</td>
+                                            <th>동영상 제목*</th>
+                                            <td>
+                                                <input type="text" name="" value="" class="form-control " placeholder="" required="" data-label="">
+                                            </td>
+                                            <td rowspan="4" class="text-center" style="border-left: 1px solid #F0F2F3;">
+                                                <button type="button" class="btn btn-outline-secondary btn-sm" onclick="removeLine(this);">삭제</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>동영상 URL*</th>
+                                            <td>
+                                                <input type="text" name="" value="" class="form-control" placeholder="" required="" data-label="">
+                                                <p class="mb-0 mt-2">※ 유튜브 영상 소스코드 복사내용에서 src 내에 포함된 주소 정보 입력 <br> 예) https://www.youtube.com/embed/HeSWsLGNSzg</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>동영상 <br> 썸네일 이미지*</th>
+                                            <td>
+                                                <div class="drop-zone-wrap ty-preview">
+                                                    <div class="drop-zone file-edit dm-uploader add_img" id="dropzone-img-robot-n0">
+                                                        <input type="file" name="uploadFile" id="uploadBtn" class="custom-file-input uploadBtn" multiple="" title="파일 찾아보기">
+                                                        <div class="file-box file_list" id="files">
+                                                            <ul class="">
+                                                                <li class="empty" style="display: list-item;">
+                                                                    <div class="noti">
+                                                                        <i class="fal fa-file-upload" aria-hidden="true"></i>마우스로 이미지 파일을 끌어오세요.
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <input type="hidden" name="robotImgSeq" value="_">
+                                                    </div>
+                                                    <div class="preview_img">
+                                                        <img src="/static/images/default-electricity.png" class="uploadImg" onerror="this.src='/static/images/default-electricity.png'; this.onerror=null;">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>노출 여부*</th>
+                                            <td>
+                                                <div class="radio-group">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" id="Y" name="YN" value="Y" class="custom-control-input" checked="">
+                                                        <label class="custom-control-label" for="Y">공개</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" id="N" name="YN" value="N" class="custom-control-input">
+                                                        <label class="custom-control-label" for="N">비공개</label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer include-html="../../../html/footer.html"></footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+	 -->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        includeHTML(function () {
+            // includeRouter(function () {
+            // 	// do something in the future
+            // });
+        });
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+        });
+    </script>
+    <script src="../../../js/custom.js"></script>
+</body>
+
+</html>
