@@ -413,6 +413,11 @@ input[type=number] {
       width: 100%;
     }
 
+    .hero-slide {
+      overflow: hidden;
+      position: relative;
+    }
+
     .embed-responsive-item {
       background-size: cover;
       background-position: center;
@@ -475,6 +480,80 @@ input[type=number] {
       font-size: 18px;
       font-weight: 600;
     }
+
+    .ms_pagination {
+      margin-bottom: 40px;
+      background-color: #fff;
+      &_item {
+        padding: 16px 0 20px;
+        cursor: pointer;
+        text-align: center;
+        transition: all .2s ease-in-out;
+        .ico {
+          display: block;
+          margin: 0 auto;
+          width: 60px;
+          height: 60px;
+          background-repeat: no-repeat;
+          background-position: center center;
+          transition: all .2s ease-in-out;
+        }
+        p {
+          font-size: 16px;
+          margin: 0;
+          margin-top: 2px;
+          line-height: 1.5;
+        }
+        &.swiper-slide-thumb-active {
+          background-color: #0479dc;
+          color: #fff;
+        }
+        
+        @for $i from 1 through 9{
+          &#{$i}{
+            .ico {
+              background-image: url(../images/home/ms_ico#{$i}.svg);
+            }
+            &.swiper-slide-thumb-active {
+              .ico {
+                background-image: url(../images/home/ms_ico#{$i}_on.svg);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ms_cont {
+      overflow: hidden;
+      text-align: left;
+      &_wrap {
+        position: relative;
+      }
+
+      &_ctrl {
+        position: absolute;
+        width: 33px;
+        height: 33px;
+        top: 50%;
+        transform: translateY(-50%);
+        outline: none;
+        border: none;
+        &.swiper-button-disabled {
+          opacity: 0.6;
+        }
+        &.ms_cont_prev {
+          background: url(../images/icon-prev.svg) no-repeat 0 center;
+          left: -40px;
+        }
+        &.ms_cont_next {
+          background: url(../images/icon-next.svg) no-repeat 100% center;
+          right: -40px;
+        }
+      }
+    }
+
+
 
     .col-4 {
       padding: 15px;
