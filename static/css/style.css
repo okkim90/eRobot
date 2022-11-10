@@ -623,7 +623,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 #home .find-model h3 {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 10px 20px;
   font-size: 18px;
   font-weight: 600;
 }
